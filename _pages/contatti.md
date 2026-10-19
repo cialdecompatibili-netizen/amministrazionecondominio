@@ -1,13 +1,13 @@
 ---
 layout: single
 title: "Contatti"
-seo_title: "Contatti e sopralluogo gratuito | EdilExtreme"
-seo_description: "Richiedi un sopralluogo gratuito per lavori su fune: descrivi il lavoro e ti rispondiamo entro 24 ore, festivi esclusi."
+seo_title: "Contatti e preventivo gratuito | Amministrazione Condominiale"
+seo_description: "Richiedi un preventivo gratuito per l'amministrazione del tuo condominio: indica indirizzo e numero di unità, ti rispondiamo entro 24 ore, festivi esclusi."
 permalink: /contatti/
 ---
 
 {%- comment -%}
-  Pagina Contatti. Logica copiata da edilextreme.com/contatti/ (al-folio):
+  Pagina Contatti. Logica copiata da il sito di origine (al-folio):
   - form con 3 campi (nome, email, messaggio) + honeypot "website" (campo trappola per i bot)
   - antispam ALTCHA: nessun captcha da risolvere, il browser calcola una prova (proof-of-work SHA-256)
     chiesta al worker con ?challenge=1 e la rimanda insieme al form
@@ -17,7 +17,7 @@ permalink: /contatti/
   accetti il dominio di questo sito (campo "sito" = location.hostname).
 {%- endcomment -%}
 
-<p class="cf-intro">Descrivici il lavoro da fare: ti rispondiamo entro 24 ore (festivi esclusi) e, se serve, fissiamo un sopralluogo gratuito e senza impegno.</p>
+<p class="cf-intro">Dicci dove si trova il condominio e quante unità ha: ti rispondiamo entro 24 ore (festivi esclusi) con un preventivo gratuito e senza impegno.</p>
 
 <style>
 .cf-wrap,.cf-intro{max-width:520px;margin-left:auto;margin-right:auto}
@@ -50,11 +50,11 @@ permalink: /contatti/
   </div>
   <div class="cf-campo">
     <label for="cf-email">La tua email</label>
-    <input type="email" id="cf-email" name="email" maxlength="150" required autocomplete="email" placeholder="nome@azienda.it">
+    <input type="email" id="cf-email" name="email" maxlength="150" required autocomplete="email" placeholder="nome@email.it">
   </div>
   <div class="cf-campo">
-    <label for="cf-msg">Di cosa hai bisogno?</label>
-    <textarea id="cf-msg" name="messaggio" rows="5" maxlength="3000" required placeholder="Raccontaci in due righe il tuo progetto: cosa vuoi ottenere e a che punto sei."></textarea>
+    <label for="cf-msg">Parlaci del tuo condominio</label>
+    <textarea id="cf-msg" name="messaggio" rows="5" maxlength="3000" required placeholder="Indirizzo del condominio, numero di unità, amministratore attuale (se c'è) e cosa vorresti migliorare."></textarea>
   </div>
   <div style="position:absolute;left:-9999px;height:0;overflow:hidden" aria-hidden="true">
     <label for="cf-web">Non compilare</label>
